@@ -18,7 +18,7 @@ namespace Cache
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            WebHost.CreateDefaultBuilder(args).UseUrls("http://*:9999")
                 .UseStartup<Startup>();
     }
 }
